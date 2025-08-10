@@ -363,10 +363,7 @@ function App() {
         <div className="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8">
           <div className="text-center mb-16">
             <h2 className="text-4xl font-bold mb-4">
-              <span className="text-white">¿Por qué elegir Pris</span>
-              <span className="text-brand-yellow text-yellow-400">m</span>
-              <span className='text-pink-600'>a</span>
-              <span className="text-white">tico</span>
+              <span className="text-white">¿Por qué elegir Prismatiko</span>
             </h2>
             <p className="text-xl text-gray-300 max-w-3xl mx-auto">
               Somos especialistas en crear sitios web que realmente funcionen para tu negocio
@@ -467,6 +464,9 @@ function App() {
           </div>
         </div>
       </section>
+
+
+         <FAQSection />
 
       {/* Contact Section */}
       <section id="contacto" className="py-20 bg-white">
@@ -571,7 +571,7 @@ function App() {
       </section>
 
 
-      <FAQSection />
+   
 
       {/* Footer */}
       <footer className="bg-gray-900 text-white py-12">
