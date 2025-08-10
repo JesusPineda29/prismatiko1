@@ -8,32 +8,32 @@ const faqs = [
     answer:
       "Te pediremos un cuestionario sencillo donde nos cuentes qué quieres en tu página y el contenido que tienes (fotos, logo, textos). Si no cuentas con alguno, no te preocupes, podemos ayudarte con eso. También necesitaremos información sobre tu negocio y el objetivo de la página. Así podremos crear una web que se adapte perfectamente a ti.",
   },
-    {
-    question: "¿Qué pasa si no me gusta el diseño?",
+  {
+    question: "¿QUÉ PASA SI NO ME GUSTA EL DISEÑO?",
     answer:
       "Nuestro objetivo es que quedes 100% satisfecho con el resultado. Por eso, durante todo el proceso trabajamos contigo, escuchando tus ideas y ajustando el diseño según tus comentarios. Además, tu sitio web incluye revisiones para asegurarnos de que te guste antes de finalizarlo.",
   },
   {
-    question: "¿CUÁNTO TIEMPO TARDAN EN ENTREGAR LA PÁGINA WEB?",
+    question: "EL SITIO WEB ES MIO",
     answer:
-      "Normalmente entre 2 y 4 semanas, dependiendo de la complejidad y de la rapidez con la que se aprueben los avances.",
+      "Si, tu sitio web es completamente tuyo.",
   },
   {
     question: "¿CÓMO ES LA FORMA DE PAGO?",
     answer:
       "Para comenzar, solicitamos un 35% de anticipo. El resto se paga al entregarte la página, una vez que estés totalmente satisfecho. Aceptamos depósito bancario o transferencia electrónica."
   },
-    {
-    question: "¿CÓMO UTILIZAN LA IA PARA MEJORAR MI PÁGINA WEB?",
+  {
+    question: "¿QUPE PASA SI YA TENGO UN SITIO WEB",
     answer:
-      "Usamos herramientas de inteligencia artificial para optimizar textos, imágenes y la experiencia de usuario, mejorando la conversión.",
+      "Nos encargamos de rediseñar e implementar un nuevo sitio web, optimizado con todas las funcionalidades que necesitas, asegurando que mantengas y mejores tu visibilidad en buscadores.",
   },
 ];
 
 export default function FAQSection() {
-  const [openIndex, setOpenIndex] = useState(null);
+  const [openIndex, setOpenIndex] = useState<number | null>(null);
 
-  const toggleFAQ = (index) => {
+  const toggleFAQ = (index : number) => {
     setOpenIndex(openIndex === index ? null : index);
   };
 
@@ -45,7 +45,7 @@ export default function FAQSection() {
       <div className="max-w-6xl mx-auto grid md:grid-cols-2 gap-12">
         {/* Título */}
         <motion.div
-          initial={{ opacity: 0, x: -50 }}
+          initial={{ opacity: 0, x: 150 }} // de 50 a 150 para que se mueva más lejos
           whileInView={{ opacity: 1, x: 0 }}
           transition={{ duration: 0.8 }}
           viewport={{ once: true }}
@@ -53,7 +53,7 @@ export default function FAQSection() {
           <p className="text-pink-500 mb-2">• FAQs</p>
           <h2 className="text-5xl font-extrabold leading-tight">
             PREGUNTAS{" "}
-            <span className="bg-gradient-to-r from-pink-500 via-purple-500 to-blue-500 bg-clip-text text-transparent">
+            <span className="bg-gradient-to-r from-yellow-500  to-pink-500 bg-clip-text text-transparent">
               FRECUENTES
             </span>
           </h2>
