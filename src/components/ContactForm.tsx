@@ -178,7 +178,7 @@ const onSubmit = async (e: React.FormEvent<HTMLFormElement>) => {
       <button
         type="submit"
         disabled={state.submitting}
-        className="w-full bg-gradient-to-r from-blue-600 to-teal-600 text-white py-4 rounded-lg hover:from-blue-700 hover:to-teal-700 transition-all duration-200 transform hover:scale-105 disabled:opacity-50 disabled:cursor-not-allowed flex items-center justify-center space-x-2"
+        className="w-full bg-gradient-to-r from-yellow-500 to-pink-500 text-white py-4 rounded-lg hover:from-blue-700 hover:to-teal-700 transition-all duration-200 transform hover:scale-105 disabled:opacity-50 disabled:cursor-not-allowed flex items-center justify-center space-x-2"
       >
         {state.submitting ? (
           <>
