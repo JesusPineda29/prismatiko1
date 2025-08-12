@@ -6,7 +6,6 @@ import ContactForm from './components/ContactForm';
 import WhatsAppButton from './components/WhatsAppButton';
 import {
   //Sitio administrable
-  Palette,
   Star,
   Clock,
   Mail,
@@ -278,37 +277,46 @@ function App() {
                   Información de contacto
                 </h3>
 
-                <div className="space-y-4">
-                  <div className="flex items-center">
-                    <div className="bg-blue-100 p-3 rounded-lg mr-4">
-                      <Phone className="w-6 h-6 text-blue-600" />
-                    </div>
-                    <div>
-                      <p className="font-semibold text-gray-900">Teléfono</p>
-                      <p className="text-gray-600">+52 55 1234 5678</p>
-                    </div>
-                  </div>
+ <div className="space-y-4 max-w-md">
+      {/* Botón de Teléfono */}
+      <button 
+        onClick={() => window.location.href = "tel:7298401248"}
+        className="w-full flex items-center p-4 bg-white rounded-lg shadow-sm border border-gray-200 hover:bg-blue-50 hover:border-blue-300 transition-all duration-200 group"
+      >
+        <div className="bg-blue-100 p-3 rounded-lg mr-4 group-hover:bg-blue-200 transition-colors">
+          <Phone className="w-6 h-6 text-blue-600" />
+        </div>
+        <div className="text-left">
+          <p className="font-semibold text-gray-900">Teléfono</p>
+          <p className="text-gray-600 group-hover:text-blue-600 transition-colors">+52 72 9840 1248</p>
+        </div>
+      </button>
 
-                  <div className="flex items-center">
-                    <div className="bg-blue-100 p-3 rounded-lg mr-4">
-                      <Mail className="w-6 h-6 text-blue-600" />
-                    </div>
-                    <div>
-                      <p className="font-semibold text-gray-900">Email</p>
-                      <p className="text-gray-600">hola@prismatiko.mx</p>
-                    </div>
-                  </div>
+      {/* Botón de Email */}
+     <button 
+        onClick={() => window.location.href = "mailto:prismatikowebs@gmail.com"}
+        className="w-full flex items-center p-4 bg-white rounded-lg shadow-sm border border-gray-200 hover:bg-blue-50 hover:border-blue-300 transition-all duration-200 group"
+      >
+        <div className="bg-blue-100 p-3 rounded-lg mr-4 group-hover:bg-blue-200 transition-colors">
+          <Mail className="w-6 h-6 text-blue-600" />
+        </div>
+        <div className="text-left">
+          <p className="font-semibold text-gray-900">Email</p>
+          <p className="text-gray-600 group-hover:text-blue-600 transition-colors">prismatikowebs@gmail.com</p>
+        </div>
+      </button>
 
-                  <div className="flex items-center">
-                    <div className="bg-blue-100 p-3 rounded-lg mr-4">
-                      <MapPin className="w-6 h-6 text-blue-600" />
-                    </div>
-                    <div>
-                      <p className="font-semibold text-gray-900">Ubicación</p>
-                      <p className="text-gray-600">Ciudad de México, México</p>
-                    </div>
-                  </div>
-                </div>
+      {/* Ubicación (sin botón) */}
+      <div className="flex items-center p-4">
+        <div className="bg-blue-100 p-3 rounded-lg mr-4">
+          <MapPin className="w-6 h-6 text-blue-600" />
+        </div>
+        <div>
+          <p className="font-semibold text-gray-900">Ubicación</p>
+          <p className="text-gray-600">Ciudad de México, México</p>
+        </div>
+      </div>
+    </div>
               </div>
 
               <div className="bg-blue-50 rounded-xl p-6">
@@ -341,7 +349,7 @@ function App() {
                   para iniciar una conversación.
                 </p>
                 <a
-                  href="https://wa.me/525512345678?text=¡Hola! Me interesa conocer más sobre sus servicios de diseño web."
+                  href="https://wa.me/7298401248?text=¡Hola! Me interesa conocer más sobre sus servicios de diseño web."
                   target="_blank"
                   rel="noopener noreferrer"
                   className="bg-white text-blue-600 px-6 py-3 rounded-lg font-semibold hover:bg-gray-100 transition-colors duration-200 inline-flex items-center"
@@ -395,8 +403,8 @@ function App() {
             <div>
               <h3 className="text-lg font-semibold mb-4">Contacto</h3>
               <div className="space-y-2 text-gray-400">
-                <p>+52 55 1234 5678</p>
-                <p>hola@prismatiko.mx</p>
+                <p>+52 72 9840 1248</p>
+                <p>prismatikowebs@gmail.com</p>
                 <p>Ciudad de México, México</p>
               </div>
             </div>
