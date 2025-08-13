@@ -61,6 +61,11 @@ function App() {
               animate={{ opacity: 1, x: 0 }}
               transition={{ duration: 1, ease: "easeOut" }}
             >
+              {/* SEO */}
+              <h1 className="sr-only">Prismático – Creación de páginas web económicas y profesionales</h1>
+              <h2 className="sr-only">Ofrecemos páginas web de calidad a precios accesibles, ideales para pequeños negocios y proyectos personales.</h2>
+                              <p className="sr-only">Creamos sitios web con diseños modernos, precios justos y optimizados para
+                  celular. Tu negocio merece una presencia digital profesional.</p>
               {/* Título principal */}
               <motion.h1
                 className="font-oswald text-4xl md:text-6xl font-bold text-white leading-tight tracking-wide mb-4"
@@ -68,8 +73,6 @@ function App() {
                 animate={{ opacity: 1, y: 0 }}
                 transition={{ delay: 0.2, duration: 0.8 }}
               >
-                <h1 className="sr-only">Prismático – Creación de páginas web económicas y profesionales</h1>
-                <h2 className="sr-only">Ofrecemos páginas web de calidad a precios accesibles, ideales para pequeños negocios y proyectos personales.</h2>
                 <span className="block font-normal">SITIOS WEB</span>
 
                 <span className="block text-6xl md:text-8xl font-extrabold mb-2">PROFESIONALES</span>
@@ -78,8 +81,6 @@ function App() {
 
                   <span className="inline-block ml-10 align-top">PARA</span> <span className="font-normal md:text-7xl">TU NEGOCIO</span>
                 </span>
-                <p className="sr-only">Creamos sitios web con diseños modernos, precios justos y optimizados para
-                  celular. Tu negocio merece una presencia digital profesional.</p>
 
               </motion.h1>
 
