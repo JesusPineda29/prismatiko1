@@ -68,6 +68,8 @@ function App() {
                 animate={{ opacity: 1, y: 0 }}
                 transition={{ delay: 0.2, duration: 0.8 }}
               >
+                <h1 className="sr-only">Prismático – Creación de páginas web económicas y profesionales</h1>
+                <h2 className="sr-only">Ofrecemos páginas web de calidad a precios accesibles, ideales para pequeños negocios y proyectos personales.</h2>
                 <span className="block font-normal">SITIOS WEB</span>
 
                 <span className="block text-6xl md:text-8xl font-extrabold mb-2">PROFESIONALES</span>
@@ -76,7 +78,8 @@ function App() {
 
                   <span className="inline-block ml-10 align-top">PARA</span> <span className="font-normal md:text-7xl">TU NEGOCIO</span>
                 </span>
-
+                <p className="sr-only">Creamos sitios web con diseños modernos, precios justos y optimizados para
+                  celular. Tu negocio merece una presencia digital profesional.</p>
 
               </motion.h1>
 
@@ -277,46 +280,46 @@ function App() {
                   Información de contacto
                 </h3>
 
- <div className="space-y-4 max-w-md">
-      {/* Botón de Teléfono */}
-      <button 
-        onClick={() => window.location.href = "tel:7298401248"}
-        className="w-full flex items-center p-4 bg-white rounded-lg shadow-sm border border-gray-200 hover:bg-blue-50 hover:border-blue-300 transition-all duration-200 group"
-      >
-        <div className="bg-blue-100 p-3 rounded-lg mr-4 group-hover:bg-blue-200 transition-colors">
-          <Phone className="w-6 h-6 text-blue-600" />
-        </div>
-        <div className="text-left">
-          <p className="font-semibold text-gray-900">Teléfono</p>
-          <p className="text-gray-600 group-hover:text-blue-600 transition-colors">+52 72 9840 1248</p>
-        </div>
-      </button>
+                <div className="space-y-4 max-w-md">
+                  {/* Botón de Teléfono */}
+                  <button
+                    onClick={() => window.location.href = "tel:7298401248"}
+                    className="w-full flex items-center p-4 bg-white rounded-lg shadow-sm border border-gray-200 hover:bg-blue-50 hover:border-blue-300 transition-all duration-200 group"
+                  >
+                    <div className="bg-blue-100 p-3 rounded-lg mr-4 group-hover:bg-blue-200 transition-colors">
+                      <Phone className="w-6 h-6 text-blue-600" />
+                    </div>
+                    <div className="text-left">
+                      <p className="font-semibold text-gray-900">Teléfono</p>
+                      <p className="text-gray-600 group-hover:text-blue-600 transition-colors">+52 72 9840 1248</p>
+                    </div>
+                  </button>
 
-      {/* Botón de Email */}
-     <button 
-        onClick={() => window.location.href = "mailto:prismatikowebs@gmail.com"}
-        className="w-full flex items-center p-4 bg-white rounded-lg shadow-sm border border-gray-200 hover:bg-blue-50 hover:border-blue-300 transition-all duration-200 group"
-      >
-        <div className="bg-blue-100 p-3 rounded-lg mr-4 group-hover:bg-blue-200 transition-colors">
-          <Mail className="w-6 h-6 text-blue-600" />
-        </div>
-        <div className="text-left">
-          <p className="font-semibold text-gray-900">Email</p>
-          <p className="text-gray-600 group-hover:text-blue-600 transition-colors">prismatikowebs@gmail.com</p>
-        </div>
-      </button>
+                  {/* Botón de Email */}
+                  <button
+                    onClick={() => window.location.href = "mailto:prismatikowebs@gmail.com"}
+                    className="w-full flex items-center p-4 bg-white rounded-lg shadow-sm border border-gray-200 hover:bg-blue-50 hover:border-blue-300 transition-all duration-200 group"
+                  >
+                    <div className="bg-blue-100 p-3 rounded-lg mr-4 group-hover:bg-blue-200 transition-colors">
+                      <Mail className="w-6 h-6 text-blue-600" />
+                    </div>
+                    <div className="text-left">
+                      <p className="font-semibold text-gray-900">Email</p>
+                      <p className="text-gray-600 group-hover:text-blue-600 transition-colors">prismatikowebs@gmail.com</p>
+                    </div>
+                  </button>
 
-      {/* Ubicación (sin botón) */}
-      <div className="flex items-center p-4">
-        <div className="bg-blue-100 p-3 rounded-lg mr-4">
-          <MapPin className="w-6 h-6 text-blue-600" />
-        </div>
-        <div>
-          <p className="font-semibold text-gray-900">Ubicación</p>
-          <p className="text-gray-600">Ciudad de México, México</p>
-        </div>
-      </div>
-    </div>
+                  {/* Ubicación (sin botón) */}
+                  <div className="flex items-center p-4">
+                    <div className="bg-blue-100 p-3 rounded-lg mr-4">
+                      <MapPin className="w-6 h-6 text-blue-600" />
+                    </div>
+                    <div>
+                      <p className="font-semibold text-gray-900">Ubicación</p>
+                      <p className="text-gray-600">Ciudad de México, México</p>
+                    </div>
+                  </div>
+                </div>
               </div>
 
               <div className="bg-blue-50 rounded-xl p-6">
@@ -373,15 +376,15 @@ function App() {
         <div className="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8">
           <div className="grid md:grid-cols-3 gap-8">
             <div>
-<div className="flex items-center space-x-2 mb-4">
-  <img
-    src="/logoMini.png"
-    alt="Prismatiko logo"
-    className="w-30 h-30 mb-10 "
-  />
-  {/* Si quieres mantener el texto al lado del logo, déjalo así: */}
-  {/* <span className="text-2xl font-bold">Prismatiko</span> */}
-</div>
+              <div className="flex items-center space-x-2 mb-4">
+                <img
+                  src="/logoMini.png"
+                  alt="Prismatiko logo"
+                  className="w-30 h-30 mb-10 "
+                />
+                {/* Si quieres mantener el texto al lado del logo, déjalo así: */}
+                {/* <span className="text-2xl font-bold">Prismatiko</span> */}
+              </div>
 
               <p className="text-gray-400 leading-relaxed">
                 Especialistas en diseño web para pequeños negocios mexicanos.

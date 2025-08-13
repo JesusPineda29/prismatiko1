@@ -141,10 +141,6 @@ export const Section = () => {
                   </li>
                   <li className="flex items-center">
                     <CheckCircle className="w-5 h-5 text-green-500 mr-3" />
-                    <span>Sistema de reservas</span>
-                  </li>
-                  <li className="flex items-center">
-                    <CheckCircle className="w-5 h-5 text-green-500 mr-3" />
                     <span>Display de Reseñas</span>
                   </li>
                   <li className="flex items-center">
@@ -159,6 +155,7 @@ export const Section = () => {
                     <CheckCircle className="w-5 h-5 text-green-500 mr-3" />
                     <span>Formulario de contacto</span>
                   </li>
+                   <br />
                 </ul>
                 <button className="w-full bg-pink-600 text-white py-3 rounded-lg hover:bg-orange-600 transition-colors duration-200 ">
                   Elegir Premium
