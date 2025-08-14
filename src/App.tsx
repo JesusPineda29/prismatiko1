@@ -17,6 +17,8 @@ import FeaturesGrid from "./components/FeaturesGrid";
 import { Section } from "./components/Section";
 
 
+
+
 function App() {
 
 
@@ -151,6 +153,24 @@ function App() {
       <Section />
 
 
+
+
+<div className="relative bg-fixed bg-cover bg-center text-white py-48 text-center" style={{ backgroundImage: 'url("r.jpg")' }}>
+  {/* Capa con filtro solo para la imagen */}
+  <div className="absolute inset-0 bg-black/15 brightness-100"></div>
+
+  {/* Contenido encima del filtro */}
+  <div className="relative">
+    <h1 className="text-6xl font-bold mb-4 text-slate-200">Diseño Profesional</h1>
+    <p className="text-3xl">A tu alcance</p>
+  </div>
+</div>
+
+
+
+
+
+
       {/* Why Choose Us Section */}
       <section id="nosotros" className="py-20 bg-gray-900">
         <div className="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8">
@@ -272,6 +292,9 @@ function App() {
 
           <div className="grid lg:grid-cols-2 gap-12">
             <div>
+                  <h3 className="text-2xl font-semibold text-gray-900 mb-6">
+                  Envíanos un mensaje
+                </h3>
               <ContactForm />
             </div>
 
@@ -368,6 +391,48 @@ function App() {
           </div>
         </div>
       </section>
+
+
+
+<div
+  className="h-[40rem] flex items-center justify-center px-6 py-48 relative bg-fixed bg-cover bg-center text-white text-center"
+  style={{
+    backgroundImage:
+      'linear-gradient(rgba(0,0,0,0.3), rgba(0,0,0,0.3)), url("u.jpg")',
+  }}
+>
+  {/* Contenido principal */}
+  <div className="max-w-4xl mx-auto">
+    {/* Badge */}
+    <div className="inline-flex items-center px-4 py-2 mb-4">
+      <span className="text-pink-500 text-3xl font-medium">Empezemos</span>
+    </div>
+
+    {/* Título principal */}
+    <h1 className="text-5xl md:text-6xl lg:text-7xl font-bold mb-8 leading-tight">
+      Impulsa tu negocio hacia
+      <br />
+      <span className="text-slate-300">nuevas oportunidades.</span>
+    </h1>
+
+    {/* Descripción */}
+    <p className="text-slate-300 text-lg md:text-xl max-w-3xl mx-auto mb-12 leading-relaxed">
+      Con páginas web profesionales que atraen clientes y potencian tu marca.
+    </p>
+
+    {/* Botón CTA */}
+    <button className="inline-flex items-center justify-center px-8 py-4 bg-pink-700 hover:bg-pink-600 text-white font-semibold text-lg rounded-lg transition-all duration-200 transform hover:scale-105 hover:shadow-lg hover:shadow-pink-500/25">
+      Comenzar
+    </button>
+
+    {/* Decoraciones de fondo */}
+    <div className="absolute inset-0 overflow-hidden pointer-events-none">
+      <div className="absolute top-1/4 left-1/4 w-96 h-96 bg-blue-500/5 rounded-full blur-3xl"></div>
+      <div className="absolute bottom-1/4 right-1/4 w-96 h-96 bg-purple-500/5 rounded-full blur-3xl"></div>
+    </div>
+  </div>
+</div>
+
 
 
 
