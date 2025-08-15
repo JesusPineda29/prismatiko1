@@ -7,7 +7,26 @@
     <title>prismatiko</title>
   </head>
   <body>
+    <!-- Loader inicial -->
+    <div id="preloader" style="
+      background: #000;
+      color: #fff;
+      display: flex;
+      justify-content: center;
+      align-items: center;
+      height: 100vh;
+      font-size: 1.5rem;
+      position: fixed;
+      inset: 0;
+      z-index: 9999;
+    ">
+      Cargando...
+    </div>
+
+    <!-- Tu app -->
     <div id="root"></div>
+
     <script type="module" src="/src/main.tsx"></script>
   </body>
 </html>
+

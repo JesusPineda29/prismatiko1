@@ -405,7 +405,7 @@ function App() {
   <div className="max-w-4xl mx-auto">
     {/* Badge */}
     <div className="inline-flex items-center px-4 py-2 mb-4">
-      <span className="text-pink-500 text-3xl font-medium">Empezemos</span>
+      <span className="text-amber-400 text-3xl font-medium">Empezemos</span>
     </div>
 
     {/* Título principal */}
@@ -421,7 +421,7 @@ function App() {
     </p>
 
     {/* Botón CTA */}
-    <button className="inline-flex items-center justify-center px-8 py-4 bg-pink-700 hover:bg-pink-600 text-white font-semibold text-lg rounded-lg transition-all duration-200 transform hover:scale-105 hover:shadow-lg hover:shadow-pink-500/25">
+    <button className="inline-flex items-center justify-center px-8 py-4 bg-amber-600 hover:bg-pink-600 text-white font-semibold text-lg rounded-lg transition-all duration-200 transform hover:scale-105 hover:shadow-lg hover:shadow-pink-500/25">
       Comenzar
     </button>
 

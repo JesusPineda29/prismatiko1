@@ -22,26 +22,26 @@ const Navigation: React.FC = () => {
           </div>
 
           {/* Desktop Menu */}
-<div className="hidden md:flex items-center space-x-6">
-  {[
-    { label: 'Inicio', section: 'inicio', },
-    { label: 'Servicios', section: 'servicios' },
-    { label: '¿Por qué nosotros?', section: 'nosotros' },
-    { label: 'Testimonios', section: 'testimonios' },
-    { label: 'Contacto', section: 'contacto', highlight: true  },
-  ].map(({ label, section, highlight }) => (
-    <button
-      key={section}
-      onClick={() => scrollToSection(section)}
-      className={`font-quicksand text-xl text-gray-200 relative transition-all duration-200 transform hover:-translate-y-1 
+          <div className="hidden md:flex items-center space-x-6">
+            {[
+              { label: 'Inicio', section: 'inicio', },
+              { label: 'Servicios', section: 'servicios' },
+              { label: '¿Por qué nosotros?', section: 'nosotros' },
+              { label: 'Testimonios', section: 'testimonios' },
+              { label: 'Contacto', section: 'contacto', highlight: true },
+            ].map(({ label, section, highlight }) => (
+              <button
+                key={section}
+                onClick={() => scrollToSection(section)}
+                className={`font-quicksand text-xl text-gray-200 relative transition-all duration-200 transform hover:-translate-y-1 
       ${highlight ? 'after:absolute after:left-0 after:right-0 after:bottom-0 after:h-[3px] after:bg-[#ffa33a] after:rounded' : ''} 
       hover:text-[#ffa33a]`}
-      style={{ textDecoration: 'none' }}
-    >
-      {label}
-    </button>
-  ))}
-</div>
+                style={{ textDecoration: 'none' }}
+              >
+                {label}
+              </button>
+            ))}
+          </div>
 
 
           {/* Mobile Menu Button */}
