@@ -64,10 +64,10 @@ function App() {
               transition={{ duration: 1, ease: "easeOut" }}
             >
               {/* SEO */}
-              <h1 className="sr-only">Prismático – Creación de páginas web económicas y profesionales</h1>
-              <h2 className="sr-only">Ofrecemos páginas web de calidad a precios accesibles, ideales para pequeños negocios y proyectos personales.</h2>
-                              <p className="sr-only">Creamos sitios web con diseños modernos, precios justos y optimizados para
-                  celular. Tu negocio merece una presencia digital profesional.</p>
+              <h1 className="sr-only">Creación de páginas web profesionales a precios accesibles</h1>
+              <h2 className="sr-only">Ideales para pequeños negocios y proyectos personales.</h2>
+              <p className="sr-only">Creamos sitios web con diseños modernos, precios justos y optimizados paracelular. Tu negocio merece una presencia digital profesional.</p>
+              
               {/* Título principal */}
               <motion.h1
                 className="font-oswald text-4xl md:text-6xl font-bold text-white leading-tight tracking-wide mb-4"
